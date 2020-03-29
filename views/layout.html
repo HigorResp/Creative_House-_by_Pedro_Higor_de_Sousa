@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    {% block title %}
+    <title>Skylab</title>
+    {% endblock title %}
+</head>
+
+{% include "head.html" %}
+
+<body id="{{ bodyId }}">
+    <div id="container">
+        {% block content %}
+
+        {% endblock %}
+    </div>
+    {% include "modal.html" %}
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>

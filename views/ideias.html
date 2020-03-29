@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+{% set bodyId = "page-ideas" %}
+
+{% block title %}
+<title>SkyIdeias</title>
+{% endblock title %}
+
+{% block content %}
+<div id="container">
+    <header>
+        <a href="/" rel="noopener noreferrer"><img src="../img/logo.png" alt="Imagem Logomarca"></a>
+        <nav>
+            <li><a href="/">Inicio</a></li>
+            <li><a href="#" onclick="onOff()">Nova Ideia</a></li>
+        </nav>
+    </header>
+    <section id="title">
+        <p>em exibição</p>
+        <h1>Ideias</h1>
+    </section>
+    <main>
+        <section id="ideias">
+            {% include "todasIdeias.html" %}
+        </section>
+    </main>
+    <footer>
+        Desenvolvido por <a href="#">Pedro Higor de Sousa</a>
+    </footer>
+</div>
+{% endblock content %}
